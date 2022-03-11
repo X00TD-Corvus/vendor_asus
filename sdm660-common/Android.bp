@@ -17,17 +17,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "colorservice",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "DeviceInfo",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
@@ -201,23 +190,6 @@ dex_import {
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "WfdService",
-	owner: "asus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "asus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 prebuilt_etc_xml {
