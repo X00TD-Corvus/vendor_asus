@@ -35,6 +35,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
 
 <permissions>
 
+<<<<<<<< HEAD:sdm660-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
     <privapp-permissions package="org.codeaurora.dialer">
         <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
         <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
@@ -88,4 +89,14 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+========
+    <privapp-permissions package="org.codeaurora.qti.qtiNetworkApp">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.qualcomm.qti.carrierswitch">
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+>>>>>>>> 415d0a3 (sdm660-common: Update RIL from `LA.UM.9.2.r1-03500-SDMxx0.0`):sdm660-common/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 </permissions>
